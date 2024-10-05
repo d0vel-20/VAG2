@@ -1355,6 +1355,11 @@ video {
   color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
+.text-accentGold {
+  --tw-text-opacity: 1;
+  color: rgb(197 163 0 / var(--tw-text-opacity));
+}
+
 .line-through {
   text-decoration-line: line-through;
 }
