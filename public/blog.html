@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAG2</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="../public/index.css">
+</head>
+<body>
+
+      <!-- Navbar -->
+  <nav class="bg-primaryBlack w-full z-[999] text-white shadow-md fixed top-0">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="text-2xl font-bold">
+        <a href="#" class="text-primaryGold">VAG</a>
+      </div>
+
+      <!-- Nav Links -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="#" class="hover:text-gray-400">Home</a>
+        <a href="#" class="hover:text-gray-400">Products</a>
+        <a href="#" class="hover:text-gray-400">About</a>
+        <a href="./blog.html" class="hover:text-gray-400">Blog</a>
+        <a href="#" class="hover:text-gray-400">Contact Us</a>
+      </div>
+
+      <!-- Sign-in and Cart Icon -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="./register.html" class="hover:text-gray-400">Sign In</a>
+        <a href="#" class="text-2xl"><i class="fas fa-shopping-cart text-primaryGold"></i></a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="menu-btn text-2xl md:hidden">
+        <i class="fas fa-bars open-menu"></i>
+        <i class="fas fa-times close-menu"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="nav-links md:hidden z-10 bg-secondaryBlack text-white py-4 ">
+      <a href="#" class="block py-2 px-4 hover:bg-gray-700">Home</a>
+      <a href="#" class="block py-2 px-4 hover:bg-gray-700">Products</a>
+      <a href="#" class="block py-2 px-4 hover:bg-gray-700">About</a>
+      <a href="#" class="block py-2 px-4 hover:bg-gray-700">Blog</a>
+      <a href="#" class="block py-2 px-4 hover:bg-gray-700">Contatct Us</a>
+      <div class="border-t border-gray-700 mt-4 pt-4">
+        <a href="#" class="block py-2 px-4 hover:bg-gray-700">Sign In</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-700">My Account</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-700 text-2xl"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </div>
+      <!-- Search Bar (visible on all screens) -->
+  <div class="bg-textColor py-4">
+    <div class="container mx-auto px-4">
+      <div class="relative">
+        <input type="text" placeholder="Search products......" class="w-full px-4 py-2 bg-secondaryBlack rounded-md text-sm text-white focus:outline-none">
+        <i class="fas fa-search absolute right-4 top-3 text-textColor"></i>
+      </div>
+    </div>
+  </div>
+  </nav>
+
+    <!-- Blogs Section -->
+    <section class="max-w-7xl mx-auto p-6 mt-[150px]">
+        <!-- Page Title -->
+        <h1 class="text-4xl font-bold text-center text-gray-800 mb-10">Latest Blogs</h1>
+    
+        <!-- Blog Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- blog cards -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition duration-300">
+                <img src="https://via.placeholder.com/600x400.png?text=Blog+3+Image" alt="" class="w-full h-48 object-cover">
+                <div class="p-6">
+                  <h3 class="text-2xl font-bold mb-2">How to Increase Conversion Rates</h3>
+                  <p class="text-gray-700 text-sm mb-4">Boost your sales by optimizing your website for conversions...</p>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-500 text-sm">September 25, 2024</span>
+                    <a href="./blog_id.html" class="text-textColor bg-primaryGold py-2 px-4 rounded-md hover:underline">Read More →</a>
+                  </div>
+                </div>
+              </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition duration-300">
+                <img src="https://via.placeholder.com/600x400.png?text=Blog+3+Image" alt="" class="w-full h-48 object-cover">
+                <div class="p-6">
+                  <h3 class="text-2xl font-bold mb-2">How to Increase Conversion Rates</h3>
+                  <p class="text-gray-700 text-sm mb-4">Boost your sales by optimizing your website for conversions...</p>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-500 text-sm">September 25, 2024</span>
+                    <a href="#" class="text-textColor bg-primaryGold py-2 px-4 rounded-md hover:underline">Read More →</a>
+                  </div>
+                </div>
+              </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition duration-300">
+                <img src="https://via.placeholder.com/600x400.png?text=Blog+3+Image" alt="" class="w-full h-48 object-cover">
+                <div class="p-6">
+                  <h3 class="text-2xl font-bold mb-2">How to Increase Conversion Rates</h3>
+                  <p class="text-gray-700 text-sm mb-4">Boost your sales by optimizing your website for conversions...</p>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-500 text-sm">September 25, 2024</span>
+                    <a href="#" class="text-textColor bg-primaryGold py-2 px-4 rounded-md hover:underline">Read More →</a>
+                  </div>
+                </div>
+              </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition duration-300">
+                <img src="https://via.placeholder.com/600x400.png?text=Blog+3+Image" alt="" class="w-full h-48 object-cover">
+                <div class="p-6">
+                  <h3 class="text-2xl font-bold mb-2">How to Increase Conversion Rates</h3>
+                  <p class="text-gray-700 text-sm mb-4">Boost your sales by optimizing your website for conversions...</p>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-500 text-sm">September 25, 2024</span>
+                    <a href="#" class="text-textColor bg-primaryGold py-2 px-4 rounded-md hover:underline">Read More →</a>
+                  </div>
+                </div>
+              </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition duration-300">
+                <img src="https://via.placeholder.com/600x400.png?text=Blog+3+Image" alt="" class="w-full h-48 object-cover">
+                <div class="p-6">
+                  <h3 class="text-2xl font-bold mb-2">How to Increase Conversion Rates</h3>
+                  <p class="text-gray-700 text-sm mb-4">Boost your sales by optimizing your website for conversions...</p>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-500 text-sm">September 25, 2024</span>
+                    <a href="#" class="text-textColor bg-primaryGold py-2 px-4 rounded-md hover:underline">Read More →</a>
+                  </div>
+                </div>
+              </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition duration-300">
+                <img src="https://via.placeholder.com/600x400.png?text=Blog+3+Image" alt="" class="w-full h-48 object-cover">
+                <div class="p-6">
+                  <h3 class="text-2xl font-bold mb-2">How to Increase Conversion Rates</h3>
+                  <p class="text-gray-700 text-sm mb-4">Boost your sales by optimizing your website for conversions...</p>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-500 text-sm">September 25, 2024</span>
+                    <a href="#" class="text-textColor bg-primaryGold py-2 px-4 rounded-md hover:underline">Read More →</a>
+                  </div>
+                </div>
+              </div>
+    
+          <!-- Additional Blog Cards (just duplicate as needed) -->
+        </div>
+      </section>
+
+
+        <!-- Footer-------------------------------------------------------------- -->
+        <footer class="bg-primaryBlack text-white py-10">
+            <div class="container mx-auto px-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Company Info -->
+                <div>
+                  <h3 class="text-xl text-primaryGold font-semibold mb-4">Vision Africa Group</h3>
+                  <p class="text-gray-400">
+                    Leading importers and distributors of electronics and electrical appliances in Nigeria. We provide high-quality, reliable products to meet the needs of our clients.
+                  </p>
+                </div>
+        
+                <!-- Useful Links -->
+                <div>
+                  <h4 class="text-lg font-semibold mb-4">Useful Links</h4>
+                  <ul>
+                    <li class="mb-2">
+                      <a href="#" class="text-gray-400 hover:text-white transition duration-200">Home</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#" class="text-gray-400 hover:text-white transition duration-200">Products</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#" class="text-gray-400 hover:text-white transition duration-200">Blog</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#" class="text-gray-400 hover:text-white transition duration-200">Contact Us</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#" class="text-gray-400 hover:text-white transition duration-200">About Us</a>
+                    </li>
+                  </ul>
+                </div>
+        
+                <!-- Support Links -->
+                <div>
+                  <h4 class="text-lg font-semibold mb-4">Support</h4>
+                  <ul>
+                    <li class="mb-2">
+                      <a href="#" class="text-gray-400 hover:text-white transition duration-200">Help Center</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#" class="text-gray-400 hover:text-white transition duration-200">Shipping & Delivery</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#" class="text-gray-400 hover:text-white transition duration-200">Returns & Exchanges</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#" class="text-gray-400 hover:text-white transition duration-200">Warranty Information</a>
+                    </li>
+                  </ul>
+                </div>
+        
+                <!-- Social Media Links -->
+                <div>
+                  <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                  <ul class="flex space-x-4">
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white transition duration-200">
+                        <!-- Social Media Icon Placeholder -->
+                        <span class="block w-6 h-6 bg-gray-400 rounded-full"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white transition duration-200">
+                        <span class="block w-6 h-6 bg-gray-400 rounded-full"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white transition duration-200">
+                        <span class="block w-6 h-6 bg-gray-400 rounded-full"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white transition duration-200">
+                        <span class="block w-6 h-6 bg-gray-400 rounded-full"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+        
+              <!-- Divider -->
+              <hr class="my-8 border-gray-700" />
+        
+              <!-- Copyright Info -->
+              <div class="text-center text-gray-500">
+                <p>&copy; <span id="currentYear"></span> Vision Africa Group. All rights reserved.</p>
+              </div>
+            </div>
+          </footer>
+
+
+
+
+  
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menuBtn.classList.toggle('open');
+    });
+
+        // Set the current year dynamically
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+  <script src="./index.js" defer></script>
+
+
+</body>
+</html>

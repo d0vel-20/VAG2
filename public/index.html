@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VAG2 </title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="../public/index.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body class="">
+
+  <!-- Navbar -->
+  <nav class="bg-primaryBlack w-full z-[999] text-white shadow-md fixed top-0">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="text-2xl font-bold">
+        <a href="#" class="text-primaryGold">VAG</a>
+      </div>
+
+      <!-- Nav Links -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="#" class="hover:text-gray-400">Home</a>
+        <a href="#" class="hover:text-gray-400">Shop</a>
+        <a href="#" class="hover:text-gray-400">Explore</a>
+        <a href="./about.html" class="hover:text-gray-400">About</a>
+        <a href="./blog.html" class="hover:text-gray-400">Blog</a>
+        <a href="#" class="hover:text-gray-400">Contact Us</a>
+      </div>
+
+      <!-- Sign-in and Cart Icon -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="./register.html" class="hover:text-gray-400">Sign In</a>
+        <a href="#" class="text-2xl"><i class="fas fa-shopping-cart text-primaryGold"></i></a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="menu-btn text-2xl md:hidden">
+        <i class="fas fa-bars open-menu"></i>
+        <i class="fas fa-times close-menu"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="nav-links md:hidden z-10 bg-secondaryBlack text-white py-4 ">
+      <a href="#" class="block py-2 px-4 hover:bg-gray-700">Home</a>
+      <a href="#" class="block py-2 px-4 hover:bg-gray-700">Products</a>
+      <a href="#" class="block py-2 px-4 hover:bg-gray-700">About</a>
+      <a href="#" class="block py-2 px-4 hover:bg-gray-700">Blog</a>
+      <a href="#" class="block py-2 px-4 hover:bg-gray-700">Contatct Us</a>
+      <div class="border-t border-gray-700 mt-4 pt-4">
+        <a href="#" class="block py-2 px-4 hover:bg-gray-700">Sign In</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-700">My Account</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-700 text-2xl"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </div>
+      <!-- Search Bar (visible on all screens) -->
+  <div class="bg-textColor py-4">
+    <div class="container mx-auto px-4">
+      <div class="relative">
+        <input type="text" placeholder="Search products......" class="w-full px-4 py-2 bg-secondaryBlack rounded-md text-sm text-white focus:outline-none">
+        <i class="fas fa-search absolute right-4 top-3 text-textColor"></i>
+      </div>
+    </div>
+  </div>
+  </nav>
+
+
+
+  <!-- Hero Section -->
+  <div class="swiper mySwiper mt-[120px] w-full h-[80vh] ">
+      <div class="swiper-wrapper">
+        <section class="swiper-slide relative w-full  bg-cover bg-center px-2 hero ">
+          <div class="absolute inset-0 bg-black opacity-70"></div>
+          <div class="relative flex flex-col items-center justify-center h-full text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+              Welcome to Vision Africa Group
+            </h1>
+            <p class="mt-4 text-[px] md:text-md max-w-2xl">
+            Your trusted name in impprtation and distribution of high-quality electronics and electrical products in Nigeria since 2008. <br /> At vision Africa group we pride ourselves of being leading suppliers of the latest innovation of electronics and electrical appliances
+      
+            </p>
+            
+            <div class="mt-6 flex items-center justify-center gap-5">
+              <a
+                href="/shop"
+                class="px-6 py-1 bg-accentGold text-lg font-semibold rounded-lg hover:bg-accentGold transition-colors"
+              >
+                Shop Now
+            </a>
+            </div>
+      
+          </div>
+        </section>
+        <section class="swiper-slide relative w-full  bg-cover bg-center px-2 hero ">
+          <div class="absolute inset-0 bg-black opacity-70"></div>
+          <div class="relative flex flex-col items-center justify-center h-full text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+              Welcome to Vision Africa Group
+            </h1>
+            <p class="mt-4 text-[px] md:text-md max-w-2xl">
+            Your trusted name in impprtation and distribution of high-quality electronics and electrical products in Nigeria since 2008. <br /> At vision Africa group we pride ourselves of being leading suppliers of the latest innovation of electronics and electrical appliances
+      
+            </p>
+            
+            <div class="mt-6 flex items-center justify-center gap-5">
+              <a
+                href="/shop"
+                class="px-6 py-1 bg-accentGold text-lg font-semibold rounded-lg hover:bg-accentGold transition-colors"
+              >
+                Shop Now
+            </a>
+            </div>
+      
+          </div>
+        </section>
+        <section class="swiper-slide relative w-full  bg-cover bg-center px-2 hero ">
+          <div class="absolute inset-0 bg-black opacity-70"></div>
+          <div class="relative flex flex-col items-center justify-center h-full text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+              Welcome to Vision Africa Group
+            </h1>
+            <p class="mt-4 text-[px] md:text-md max-w-2xl">
+            Your trusted name in impprtation and distribution of high-quality electronics and electrical products in Nigeria since 2008. <br /> At vision Africa group we pride ourselves of being leading suppliers of the latest innovation of electronics and electrical appliances
+      
+            </p>
+            
+            <div class="mt-6 flex items-center justify-center gap-5">
+              <a
+                href="/shop"
+                class="px-6 py-1 bg-accentGold text-lg font-semibold rounded-lg hover:bg-accentGold transition-colors"
+              >
+                Shop Now
+            </a>
+            </div>
+      
+          </div>
+        </section>
+        <section class="swiper-slide relative w-full  bg-cover bg-center px-2 hero ">
+          <div class="absolute inset-0 bg-black opacity-70"></div>
+          <div class="relative flex flex-col items-center justify-center h-full text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+              Welcome to Vision Africa Group
+            </h1>
+            <p class="mt-4 text-[px] md:text-md max-w-2xl">
+            Your trusted name in impprtation and distribution of high-quality electronics and electrical products in Nigeria since 2008. <br /> At vision Africa group we pride ourselves of being leading suppliers of the latest innovation of electronics and electrical appliances
+      
+            </p>
+            
+            <div class="mt-6 flex items-center justify-center gap-5">
+              <a
+                href="/shop"
+                class="px-6 py-1 bg-accentGold text-lg font-semibold rounded-lg hover:bg-accentGold transition-colors"
+              >
+                Shop Now
+            </a>
+            </div>
+      
+          </div>
+        </section>
+        <section class="swiper-slide relative w-full  bg-cover bg-center px-2 hero ">
+          <div class="absolute inset-0 bg-black opacity-70"></div>
+          <div class="relative flex flex-col items-center justify-center h-full text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+              Welcome to Vision Africa Group
+            </h1>
+            <p class="mt-4 text-[px] md:text-md max-w-2xl">
+            Your trusted name in impprtation and distribution of high-quality electronics and electrical products in Nigeria since 2008. <br /> At vision Africa group we pride ourselves of being leading suppliers of the latest innovation of electronics and electrical appliances
+      
+            </p>
+            
+            <div class="mt-6 flex items-center justify-center gap-5">
+              <a
+                href="/shop"
+                class="px-6 py-1 bg-accentGold text-lg font-semibold rounded-lg hover:bg-accentGold transition-colors"
+              >
+                Shop Now
+            </a>
+            </div>
+      
+          </div>
+        </section>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+  </div>
+  <!-- end of hero section--------------------------------------------------------------- -->
+
+
+  
+
+    <!-- Latest Products Section -->
+    <div class="max-w-7xl mx-auto p-6">
+        <h2 class="text-2xl font-bold mb-6">Shop Products</h2>
+        <div id="products-grid" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          <!-- Product cards will be dynamically injected here by JavaScript -->
+          <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <!-- Product Image -->
+            <div class="relative">
+              <img src="https://via.placeholder.com/150" alt="Air Conditioner" class="w-full h-40 object-cover rounded-t-lg mb-4" />
+              <!-- Discount Badge -->
+              <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">20% OFF</span>
+            </div>
+          
+            <!-- Product Info -->
+            <div>
+              <h3 class="text-[15px] font-semibold mb-2 text-gray-800">Air Conditioner</h3>
+          
+              <!-- Price Section -->
+              <div class="mb-2">
+                <span class="text-lg font-bold text-green-600">$19.99</span>
+                <span class="text-sm line-through text-gray-500 ml-2">$24.99</span>
+              </div>
+          
+              <!-- Product Rating -->
+              <div class="flex items-center mb-2">
+                <span class="text-yellow-500">★★★★☆</span>
+                <span class="text-[11px] text-gray-500 ml-2">(120 Reviews)</span>
+              </div>
+          
+              <!-- Availability and CTA -->
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-green-600 font-semibold">In Stock</span>
+                <button class="bg-primaryGold text-white text-[10px] font-bold py-2 px-2 rounded hover:bg-blue-600 transition">Add to Cart</button>
+              </div>
+              
+              <!-- Date Added -->
+              <p class="text-xs text-gray-400 mt-2">Added: October 3, 2024</p>
+            </div>
+          </div>
+          
+          <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <!-- Product Image -->
+            <div class="relative">
+              <img src="https://via.placeholder.com/150" alt="Air Conditioner" class="w-full h-40 object-cover rounded-t-lg mb-4" />
+              <!-- Discount Badge -->
+              <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">20% OFF</span>
+            </div>
+          
+            <!-- Product Info -->
+            <div>
+              <h3 class="text-[15px] font-semibold mb-2 text-gray-800">Air Conditioner</h3>
+          
+              <!-- Price Section -->
+              <div class="mb-2">
+                <span class="text-lg font-bold text-green-600">$19.99</span>
+                <span class="text-sm line-through text-gray-500 ml-2">$24.99</span>
+              </div>
+          
+              <!-- Product Rating -->
+              <div class="flex items-center mb-2">
+                <span class="text-yellow-500">★★★★☆</span>
+                <span class="text-[11px] text-gray-500 ml-2">(120 Reviews)</span>
+              </div>
+          
+              <!-- Availability and CTA -->
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-green-600 font-semibold">In Stock</span>
+                <button class="bg-primaryGold text-white text-[10px] font-bold py-2 px-2 rounded hover:bg-blue-600 transition">Add to Cart</button>
+              </div>
+              
+              <!-- Date Added -->
+              <p class="text-xs text-gray-400 mt-2">Added: October 3, 2024</p>
+            </div>
+          </div>
+          
+          <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <!-- Product Image -->
+            <div class="relative">
+              <img src="https://via.placeholder.com/150" alt="Air Conditioner" class="w-full h-40 object-cover rounded-t-lg mb-4" />
+              <!-- Discount Badge -->
+              <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">20% OFF</span>
+            </div>
+          
+            <!-- Product Info -->
+            <div>
+              <h3 class="text-[15px] font-semibold mb-2 text-gray-800">Air Conditioner</h3>
+          
+              <!-- Price Section -->
+              <div class="mb-2">
+                <span class="text-lg font-bold text-green-600">$19.99</span>
+                <span class="text-sm line-through text-gray-500 ml-2">$24.99</span>
+              </div>
+          
+              <!-- Product Rating -->
+              <div class="flex items-center mb-2">
+                <span class="text-yellow-500">★★★★☆</span>
+                <span class="text-[11px] text-gray-500 ml-2">(120 Reviews)</span>
+              </div>
+          
+              <!-- Availability and CTA -->
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-green-600 font-semibold">In Stock</span>
+                <button class="bg-primaryGold text-white text-[10px] font-bold py-2 px-2 rounded hover:bg-blue-600 transition">Add to Cart</button>
+              </div>
+              
+              <!-- Date Added -->
+              <p class="text-xs text-gray-400 mt-2">Added: October 3, 2024</p>
+            </div>
+          </div>
+          
+          <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <!-- Product Image -->
+            <div class="relative">
+              <img src="https://via.placeholder.com/150" alt="Air Conditioner" class="w-full h-40 object-cover rounded-t-lg mb-4" />
+              <!-- Discount Badge -->
+              <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">20% OFF</span>
+            </div>
+          
+            <!-- Product Info -->
+            <div>
+              <h3 class="text-[15px] font-semibold mb-2 text-gray-800">Air Conditioner</h3>
+          
+              <!-- Price Section -->
+              <div class="mb-2">
+                <span class="text-lg font-bold text-green-600">$19.99</span>
+                <span class="text-sm line-through text-gray-500 ml-2">$24.99</span>
+              </div>
+          
+              <!-- Product Rating -->
+              <div class="flex items-center mb-2">
+                <span class="text-yellow-500">★★★★☆</span>
+                <span class="text-[11px] text-gray-500 ml-2">(120 Reviews)</span>
+              </div>
+          
+              <!-- Availability and CTA -->
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-green-600 font-semibold">In Stock</span>
+                <button class="bg-primaryGold text-white text-[10px] font-bold py-2 px-2 rounded hover:bg-blue-600 transition">Add to Cart</button>
+              </div>
+              
+              <!-- Date Added -->
+              <p class="text-xs text-gray-400 mt-2">Added: October 3, 2024</p>
+            </div>
+          </div>
+          
+          <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <!-- Product Image -->
+            <div class="relative">
+              <img src="https://via.placeholder.com/150" alt="Air Conditioner" class="w-full h-40 object-cover rounded-t-lg mb-4" />
+              <!-- Discount Badge -->
+              <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">20% OFF</span>
+            </div>
+          
+            <!-- Product Info -->
+            <div>
+              <h3 class="text-[15px] font-semibold mb-2 text-gray-800">Air Conditioner</h3>
+          
+              <!-- Price Section -->
+              <div class="mb-2">
+                <span class="text-lg font-bold text-green-600">$19.99</span>
+                <span class="text-sm line-through text-gray-500 ml-2">$24.99</span>
+              </div>
+          
+              <!-- Product Rating -->
+              <div class="flex items-center mb-2">
+                <span class="text-yellow-500">★★★★☆</span>
+                <span class="text-[11px] text-gray-500 ml-2">(120 Reviews)</span>
+              </div>
+          
+              <!-- Availability and CTA -->
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-green-600 font-semibold">In Stock</span>
+                <button class="bg-primaryGold text-white text-[10px] font-bold py-2 px-2 rounded hover:bg-blue-600 transition">Add to Cart</button>
+              </div>
+              
+              <!-- Date Added -->
+              <p class="text-xs text-gray-400 mt-2">Added: October 3, 2024</p>
+            </div>
+          </div>
+          
+          <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <!-- Product Image -->
+            <div class="relative">
+              <img src="https://via.placeholder.com/150" alt="Air Conditioner" class="w-full h-40 object-cover rounded-t-lg mb-4" />
+              <!-- Discount Badge -->
+              <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">20% OFF</span>
+            </div>
+          
+            <!-- Product Info -->
+            <div>
+              <h3 class="text-[15px] font-semibold mb-2 text-gray-800">Air Conditioner</h3>
+          
+              <!-- Price Section -->
+              <div class="mb-2">
+                <span class="text-lg font-bold text-green-600">$19.99</span>
+                <span class="text-sm line-through text-gray-500 ml-2">$24.99</span>
+              </div>
+          
+              <!-- Product Rating -->
+              <div class="flex items-center mb-2">
+                <span class="text-yellow-500">★★★★☆</span>
+                <span class="text-[11px] text-gray-500 ml-2">(120 Reviews)</span>
+              </div>
+          
+              <!-- Availability and CTA -->
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-green-600 font-semibold">In Stock</span>
+                <button class="bg-primaryGold text-white text-[10px] font-bold py-2 px-2 rounded hover:bg-blue-600 transition">Add to Cart</button>
+              </div>
+              
+              <!-- Date Added -->
+              <p class="text-xs text-gray-400 mt-2">Added: October 3, 2024</p>
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+
+
+
+      
+<!-- FLASH SALE -------------------------------------------------------- -->
+<section class="w-full pb-[40px] relative">
+  <div class="max-w-7xl mx-auto p-6 bg-accentGold rounded-lg shadow-lg overflow-hidden">
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-2xl font-bold">Limited Time Flash Sale!</h2>
+      <div id="countdown" class="text-lg font-semibold text-red-600"></div>
+    </div>
+    <!-- Carousel Wrapper -->
+    <div class="relative">
+      <!-- Left Arrow -->
+      <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-primaryGold text-white px-3 py-2 rounded-full hover:bg-blue-600 transition z-10">
+        &#8592;
+      </button>
+
+      <!-- Flash Sale Container -->
+      <div id="flashSaleWrapper" class="overflow-hidden">
+        <div id="flashSaleContainer" class="flex gap-6 transition-transform duration-300 ease-in-out">
+          <!-- Flash Sale Products (same structure as before) -->
+          <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 product-card">
+            <!-- Product Card #1 -->
+            <div class="relative">
+              <img src="https://via.placeholder.com/150" alt="Air Conditioner" class="w-full h-40 object-cover rounded-t-lg mb-4" />
+              <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">20% OFF</span>
+            </div>
+            <div>
+              <h3 class="text-[15px] font-semibold mb-2 text-gray-800">Air Conditioner</h3>
+              <div class="mb-2">
+                <span class="text-lg font-bold text-green-600">$19.99</span>
+                <span class="text-sm line-through text-gray-500 ml-2">$24.99</span>
+              </div>
+              <div class="flex items-center mb-2">
+                <span class="text-yellow-500">★★★★☆</span>
+                <span class="text-[11px] text-gray-500 ml-2">(120 Reviews)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-green-600 font-semibold">In Stock</span>
+                <button class="bg-primaryGold text-white text-[10px] font-bold py-2 px-2 rounded hover:bg-blue-600 transition">Add to Cart</button>
+              </div>
+              <p class="text-xs text-gray-400 mt-2">Added: October 3, 2024</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 product-card">
+            <!-- Product Card #1 -->
+            <div class="relative">
+              <img src="https://via.placeholder.com/150" alt="Air Conditioner" class="w-full h-40 object-cover rounded-t-lg mb-4" />
+              <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">20% OFF</span>
+            </div>
+            <div>
+              <h3 class="text-[15px] font-semibold mb-2 text-gray-800">Air Conditioner</h3>
+              <div class="mb-2">
+                <span class="text-lg font-bold text-green-600">$19.99</span>
+                <span class="text-sm line-through text-gray-500 ml-2">$24.99</span>
+              </div>
+              <div class="flex items-center mb-2">
+                <span class="text-yellow-500">★★★★☆</span>
+                <span class="text-[11px] text-gray-500 ml-2">(120 Reviews)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-green-600 font-semibold">In Stock</span>
+                <button class="bg-primaryGold text-white text-[10px] font-bold py-2 px-2 rounded hover:bg-blue-600 transition">Add to Cart</button>
+              </div>
+              <p class="text-xs text-gray-400 mt-2">Added: October 3, 2024</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 product-card">
+            <!-- Product Card #1 -->
+            <div class="relative">
+              <img src="https://via.placeholder.com/150" alt="Air Conditioner" class="w-full h-40 object-cover rounded-t-lg mb-4" />
+              <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">20% OFF</span>
+            </div>
+            <div>
+              <h3 class="text-[15px] font-semibold mb-2 text-gray-800">Air Conditioner</h3>
+              <div class="mb-2">
+                <span class="text-lg font-bold text-green-600">$19.99</span>
+                <span class="text-sm line-through text-gray-500 ml-2">$24.99</span>
+              </div>
+              <div class="flex items-center mb-2">
+                <span class="text-yellow-500">★★★★☆</span>
+                <span class="text-[11px] text-gray-500 ml-2">(120 Reviews)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-green-600 font-semibold">In Stock</span>
+                <button class="bg-primaryGold text-white text-[10px] font-bold py-2 px-2 rounded hover:bg-blue-600 transition">Add to Cart</button>
+              </div>
+              <p class="text-xs text-gray-400 mt-2">Added: October 3, 2024</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 product-card">
+            <!-- Product Card #1 -->
+            <div class="relative">
+              <img src="https://via.placeholder.com/150" alt="Air Conditioner" class="w-full h-40 object-cover rounded-t-lg mb-4" />
+              <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">20% OFF</span>
+            </div>
+            <div>
+              <h3 class="text-[15px] font-semibold mb-2 text-gray-800">Air Conditioner</h3>
+              <div class="mb-2">
+                <span class="text-lg font-bold text-green-600">$19.99</span>
+                <span class="text-sm line-through text-gray-500 ml-2">$24.99</span>
+              </div>
+              <div class="flex items-center mb-2">
+                <span class="text-yellow-500">★★★★☆</span>
+                <span class="text-[11px] text-gray-500 ml-2">(120 Reviews)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-green-600 font-semibold">In Stock</span>
+                <button class="bg-primaryGold text-white text-[10px] font-bold py-2 px-2 rounded hover:bg-blue-600 transition">Add to Cart</button>
+              </div>
+              <p class="text-xs text-gray-400 mt-2">Added: October 3, 2024</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 product-card">
+            <!-- Product Card #1 -->
+            <div class="relative">
+              <img src="https://via.placeholder.com/150" alt="Air Conditioner" class="w-full h-40 object-cover rounded-t-lg mb-4" />
+              <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">20% OFF</span>
+            </div>
+            <div>
+              <h3 class="text-[15px] font-semibold mb-2 text-gray-800">Air Conditioner</h3>
+              <div class="mb-2">
+                <span class="text-lg font-bold text-green-600">$19.99</span>
+                <span class="text-sm line-through text-gray-500 ml-2">$24.99</span>
+              </div>
+              <div class="flex items-center mb-2">
+                <span class="text-yellow-500">★★★★☆</span>
+                <span class="text-[11px] text-gray-500 ml-2">(120 Reviews)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-green-600 font-semibold">In Stock</span>
+                <button class="bg-primaryGold text-white text-[10px] font-bold py-2 px-2 rounded hover:bg-blue-600 transition">Add to Cart</button>
+              </div>
+              <p class="text-xs text-gray-400 mt-2">Added: October 3, 2024</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 product-card">
+            <!-- Product Card #1 -->
+            <div class="relative">
+              <img src="https://via.placeholder.com/150" alt="Air Conditioner" class="w-full h-40 object-cover rounded-t-lg mb-4" />
+              <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">20% OFF</span>
+            </div>
+            <div>
+              <h3 class="text-[15px] font-semibold mb-2 text-gray-800">Air Conditioner</h3>
+              <div class="mb-2">
+                <span class="text-lg font-bold text-green-600">$19.99</span>
+                <span class="text-sm line-through text-gray-500 ml-2">$24.99</span>
+              </div>
+              <div class="flex items-center mb-2">
+                <span class="text-yellow-500">★★★★☆</span>
+                <span class="text-[11px] text-gray-500 ml-2">(120 Reviews)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-green-600 font-semibold">In Stock</span>
+                <button class="bg-primaryGold text-white text-[10px] font-bold py-2 px-2 rounded hover:bg-blue-600 transition">Add to Cart</button>
+              </div>
+              <p class="text-xs text-gray-400 mt-2">Added: October 3, 2024</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 product-card">
+            <!-- Product Card #1 -->
+            <div class="relative">
+              <img src="https://via.placeholder.com/150" alt="Air Conditioner" class="w-full h-40 object-cover rounded-t-lg mb-4" />
+              <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">20% OFF</span>
+            </div>
+            <div>
+              <h3 class="text-[15px] font-semibold mb-2 text-gray-800">Air Conditioner</h3>
+              <div class="mb-2">
+                <span class="text-lg font-bold text-green-600">$19.99</span>
+                <span class="text-sm line-through text-gray-500 ml-2">$24.99</span>
+              </div>
+              <div class="flex items-center mb-2">
+                <span class="text-yellow-500">★★★★☆</span>
+                <span class="text-[11px] text-gray-500 ml-2">(120 Reviews)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-green-600 font-semibold">In Stock</span>
+                <button class="bg-primaryGold text-white text-[10px] font-bold py-2 px-2 rounded hover:bg-blue-600 transition">Add to Cart</button>
+              </div>
+              <p class="text-xs text-gray-400 mt-2">Added: October 3, 2024</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 product-card">
+            <!-- Product Card #1 -->
+            <div class="relative">
+              <img src="https://via.placeholder.com/150" alt="Air Conditioner" class="w-full h-40 object-cover rounded-t-lg mb-4" />
+              <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">20% OFF</span>
+            </div>
+            <div>
+              <h3 class="text-[15px] font-semibold mb-2 text-gray-800">Air Conditioner</h3>
+              <div class="mb-2">
+                <span class="text-lg font-bold text-green-600">$19.99</span>
+                <span class="text-sm line-through text-gray-500 ml-2">$24.99</span>
+              </div>
+              <div class="flex items-center mb-2">
+                <span class="text-yellow-500">★★★★☆</span>
+                <span class="text-[11px] text-gray-500 ml-2">(120 Reviews)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-green-600 font-semibold">In Stock</span>
+                <button class="bg-primaryGold text-white text-[10px] font-bold py-2 px-2 rounded hover:bg-blue-600 transition">Add to Cart</button>
+              </div>
+              <p class="text-xs text-gray-400 mt-2">Added: October 3, 2024</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 product-card">
+            <!-- Product Card #1 -->
+            <div class="relative">
+              <img src="https://via.placeholder.com/150" alt="Air Conditioner" class="w-full h-40 object-cover rounded-t-lg mb-4" />
+              <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">20% OFF</span>
+            </div>
+            <div>
+              <h3 class="text-[15px] font-semibold mb-2 text-gray-800">Air Conditioner</h3>
+              <div class="mb-2">
+                <span class="text-lg font-bold text-green-600">$19.99</span>
+                <span class="text-sm line-through text-gray-500 ml-2">$24.99</span>
+              </div>
+              <div class="flex items-center mb-2">
+                <span class="text-yellow-500">★★★★☆</span>
+                <span class="text-[11px] text-gray-500 ml-2">(120 Reviews)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-green-600 font-semibold">In Stock</span>
+                <button class="bg-primaryGold text-white text-[10px] font-bold py-2 px-2 rounded hover:bg-blue-600 transition">Add to Cart</button>
+              </div>
+              <p class="text-xs text-gray-400 mt-2">Added: October 3, 2024</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 product-card">
+            <!-- Product Card #1 -->
+            <div class="relative">
+              <img src="https://via.placeholder.com/150" alt="Air Conditioner" class="w-full h-40 object-cover rounded-t-lg mb-4" />
+              <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">20% OFF</span>
+            </div>
+            <div>
+              <h3 class="text-[15px] font-semibold mb-2 text-gray-800">Air Conditioner</h3>
+              <div class="mb-2">
+                <span class="text-lg font-bold text-green-600">$19.99</span>
+                <span class="text-sm line-through text-gray-500 ml-2">$24.99</span>
+              </div>
+              <div class="flex items-center mb-2">
+                <span class="text-yellow-500">★★★★☆</span>
+                <span class="text-[11px] text-gray-500 ml-2">(120 Reviews)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-green-600 font-semibold">In Stock</span>
+                <button class="bg-primaryGold text-white text-[10px] font-bold py-2 px-2 rounded hover:bg-blue-600 transition">Add to Cart</button>
+              </div>
+              <p class="text-xs text-gray-400 mt-2">Added: October 3, 2024</p>
+            </div>
+          </div>
+          <!-- Repeat other product cards in the same structure -->
+        </div>
+      </div>
+
+      <!-- Right Arrow -->
+      <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-primaryGold text-white px-3 py-2 rounded-full hover:bg-blue-600 transition z-10">
+        &#8594;
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+      <!-- Exploree Section------------------------------------------------------------------------------------- -->
+      <section class="py-16 bg-secondaryBlack">
+        <div class="container mx-auto px-4">
+          <!-- Section Title -->
+          <h2 class="text-2xl font-bold text-left text-textColor mb-8">Explore by Categories</h2>
+    
+          <!-- Categories Grid -->
+          <div id="categories-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Categories will be injected here by JavaScript -->
+            <div class="group bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+              <div class="h-48 bg-gray-200 flex items-center justify-center">
+                <img src="https://res.cloudinary.com/da1sagzgc/image/upload/v1727474789/aircon_uqvnl5.jpg" alt="" class="w-full h-full object-cover">
+              </div>
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-gray-700 group-hover:text-blue-500 transition-colors">
+                  Air Conditioners
+                </h3>
+              </div>
+            </div>
+            <div class="group bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+              <div class="h-48 bg-gray-200 flex items-center justify-center">
+                <img src="https://res.cloudinary.com/da1sagzgc/image/upload/v1727474789/surve_gseicj.jpg" alt="" class="w-full h-full object-cover">
+              </div>
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-gray-700 group-hover:text-blue-500 transition-colors">
+                  Surveillance Cameras
+                </h3>
+              </div>
+            </div>
+            <div class="group bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+              <div class="h-48 bg-gray-200 flex items-center justify-center">
+                <img src="https://res.cloudinary.com/da1sagzgc/image/upload/v1727474789/geapple_hggdjw.jpg" alt="" class="w-full h-full object-cover">
+              </div>
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-gray-700 group-hover:text-blue-500 transition-colors">
+                  General Electronics
+                </h3>
+              </div>
+            </div>
+            <div class="group bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+              <div class="h-48 bg-gray-200 flex items-center justify-center">
+                <img src="https://res.cloudinary.com/da1sagzgc/image/upload/v1727475747/solar_ztnuwv.png" alt="" class="w-full h-full object-cover">
+              </div>
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-gray-700 group-hover:text-blue-500 transition-colors">
+                  Solar Power
+                </h3>
+              </div>
+            </div>
+            <div class="group bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+              <div class="h-48 bg-gray-200 flex items-center justify-center">
+                <img src="https://res.cloudinary.com/da1sagzgc/image/upload/v1727475740/smart_ojjwvx.png" alt="" class="w-full h-full object-cover">
+              </div>
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-gray-700 group-hover:text-blue-500 transition-colors">
+                  Smart Tv
+                </h3>
+              </div>
+            </div>
+            <div class="group bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+              <div class="h-48 bg-gray-200 flex items-center justify-center">
+                <img src="https://res.cloudinary.com/da1sagzgc/image/upload/v1727475738/sewing_f5sygg.jpg" alt="" class="w-full h-full object-cover">
+              </div>
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-gray-700 group-hover:text-blue-500 transition-colors">
+                  Sewing Machines
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Latest Blogs-------------------------------------------------------------------------- -->
+      <section class="py-12 px-6 md:px-12 bg-accentGold">
+        <div class="max-w-7xl mx-auto">
+          <h2 class="text-4xl font-bold mb-8 text-center text-secondaryBlack">Latest Blogs</h2>
+          <div id="blog-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Blog cards will be inserted here by JavaScript -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition duration-300">
+              <img src="https://via.placeholder.com/600x400.png?text=Blog+3+Image" alt="" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2">How to Increase Conversion Rates</h3>
+                <p class="text-gray-700 text-sm mb-4">Boost your sales by optimizing your website for conversions...</p>
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-500 text-sm">September 25, 2024</span>
+                  <a href="./blog.html" class="text-textColor bg-primaryGold py-2 px-4 rounded-md hover:underline">Read More →</a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition duration-300">
+              <img src="https://via.placeholder.com/600x400.png?text=Blog+3+Image" alt="" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2">How to Increase Conversion Rates</h3>
+                <p class="text-gray-700 text-sm mb-4">Boost your sales by optimizing your website for conversions...</p>
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-500 text-sm">September 25, 2024</span>
+                  <a href="./blog.html" class="text-textColor bg-primaryGold py-2 px-4 rounded-md hover:underline">Read More →</a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition duration-300">
+              <img src="https://via.placeholder.com/600x400.png?text=Blog+3+Image" alt="" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2">How to Increase Conversion Rates</h3>
+                <p class="text-gray-700 text-sm mb-4">Boost your sales by optimizing your website for conversions...</p>
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-500 text-sm">September 25, 2024</span>
+                  <a href="./blog.html" class="text-textColor bg-primaryGold py-2 px-4 rounded-md hover:underline">Read More →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Why Choose-------------------------------------------------------------- -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <!-- Section Title -->
+          <h2 class="text-3xl font-bold text-center text-secondaryBlack mb-8">Why Choose Us?</h2>
+      
+          <!-- Features Grid -->
+          <div id="features-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature cards will be inserted here by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+    <!-- =FAQ=============================================================== -->
+    <section class="py-12 px-6 md:px-12 bg-gray-50">
+        <div class="faq-section mx-auto">
+          <h2 class="text-4xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+          <div id="faq-container" class="space-y-4">
+            <!-- FAQ Items will be inserted here -->
+             
+          </div>
+        </div>
+      </section>
+
+      <!-- whatsapp button -->
+      <a
+      href="https://wa.me/1234567890" 
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed bottom-6 right-6 bg-green-500 p-4 z-30 rounded-full shadow-lg hover:bg-green-600 transition duration-300 ease-in-out"
+      aria-label="Contact us on WhatsApp"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="white"
+        viewBox="0 0 32 32"
+        class="w-8 h-8"
+      >
+        <path d="M16 .269C7.555.269.663 7.174.663 15.618c0 2.77.725 5.484 2.108 7.884L.035 31.965l8.67-2.714a15.421 15.421 0 007.294 1.853c8.45 0 15.343-6.905 15.343-15.35C31.343 7.174 24.451.269 16 .269zm9.09 21.836c-.382 1.077-2.193 2.028-3.054 2.162-.79.119-1.741.165-2.79-.172-.645-.201-1.475-.48-2.544-.939-4.485-1.938-7.397-6.445-7.625-6.742-.228-.296-1.823-2.43-1.823-4.638 0-2.209 1.138-3.29 1.544-3.741.382-.44.831-.549 1.113-.549.276 0 .558 0 .804.015.263.01.605-.098.945.717.346.83 1.179 2.87 1.282 3.078.105.208.175.44.034.736-.137.293-.205.472-.41.723-.197.243-.43.544-.617.731-.207.204-.422.433-.182.84.238.406 1.057 1.735 2.273 2.816 1.57 1.408 2.88 1.855 3.308 2.062.428.207.673.173.924-.105.252-.277 1.074-1.247 1.362-1.674.289-.426.588-.358.982-.207.392.15 2.47 1.162 2.9 1.377.431.214.723.32.829.497.104.176.104.99-.278 2.067z" />
+      </svg>
+    </a>
+
+
+
+      <!-- Footer-------------------------------------------------------------- -->
+      <footer class="bg-primaryBlack text-white py-10">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- Company Info -->
+            <div>
+              <h3 class="text-xl text-primaryGold font-semibold mb-4">Vision Africa Group</h3>
+              <p class="text-gray-400">
+                Leading importers and distributors of electronics and electrical appliances in Nigeria. We provide high-quality, reliable products to meet the needs of our clients.
+              </p>
+            </div>
+    
+            <!-- Useful Links -->
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Useful Links</h4>
+              <ul>
+                <li class="mb-2">
+                  <a href="#" class="text-gray-400 hover:text-white transition duration-200">Home</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-gray-400 hover:text-white transition duration-200">Products</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-gray-400 hover:text-white transition duration-200">Blog</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-gray-400 hover:text-white transition duration-200">Contact Us</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-gray-400 hover:text-white transition duration-200">About Us</a>
+                </li>
+              </ul>
+            </div>
+    
+            <!-- Support Links -->
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Support</h4>
+              <ul>
+                <li class="mb-2">
+                  <a href="#" class="text-gray-400 hover:text-white transition duration-200">Help Center</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-gray-400 hover:text-white transition duration-200">Shipping & Delivery</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-gray-400 hover:text-white transition duration-200">Returns & Exchanges</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-gray-400 hover:text-white transition duration-200">Warranty Information</a>
+                </li>
+              </ul>
+            </div>
+    
+            <!-- Social Media Links -->
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+              <ul class="flex space-x-4">
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-white transition duration-200">
+                    <!-- Social Media Icon Placeholder -->
+                    <span class="block w-6 h-6 bg-gray-400 rounded-full"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-white transition duration-200">
+                    <span class="block w-6 h-6 bg-gray-400 rounded-full"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-white transition duration-200">
+                    <span class="block w-6 h-6 bg-gray-400 rounded-full"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-white transition duration-200">
+                    <span class="block w-6 h-6 bg-gray-400 rounded-full"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- Divider -->
+          <hr class="my-8 border-gray-700" />
+    
+          <!-- Copyright Info -->
+          <div class="text-center text-gray-500">
+            <p>&copy; <span id="currentYear"></span> Vision Africa Group. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menuBtn.classList.toggle('open');
+    });
+
+        // Set the current year dynamically
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./index.js" defer></script>
+
+</body>
+</html>
+

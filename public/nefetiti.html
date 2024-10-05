@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nefetiti - Beauty & Cosmetics</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for the hero section */
+        .hero-bg {
+            background-image: url('https://source.unsplash.com/1600x900/?makeup,beauty');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Hero Section -->
+    <header class="hero-bg h-screen flex items-center justify-center text-center text-white">
+        <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to Nefetiti</h1>
+            <p class="text-lg md:text-2xl mb-6">Discover the beauty within you with our exquisite range of cosmetics.</p>
+            <a href="#products" class="bg-pink-600 hover:bg-pink-500 text-white font-semibold py-3 px-6 rounded-full">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Featured Products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x400/?lipstick" alt="Lipstick" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Luxury Lipstick</h3>
+                        <p class="text-gray-600">$29.99</p>
+                        <button class="mt-2 bg-pink-600 hover:bg-pink-500 text-white py-2 px-4 rounded-full">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x400/?foundation" alt="Foundation" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Silk Foundation</h3>
+                        <p class="text-gray-600">$39.99</p>
+                        <button class="mt-2 bg-pink-600 hover:bg-pink-500 text-white py-2 px-4 rounded-full">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x400/?skincare" alt="Skincare" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Hydrating Serum</h3>
+                        <p class="text-gray-600">$49.99</p>
+                        <button class="mt-2 bg-pink-600 hover:bg-pink-500 text-white py-2 px-4 rounded-full">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x400/?nails" alt="Nail Polish" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Chic Nail Polish</h3>
+                        <p class="text-gray-600">$19.99</p>
+                        <button class="mt-2 bg-pink-600 hover:bg-pink-500 text-white py-2 px-4 rounded-full">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x400/?perfume" alt="Perfume" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Elegant Perfume</h3>
+                        <p class="text-gray-600">$59.99</p>
+                        <button class="mt-2 bg-pink-600 hover:bg-pink-500 text-white py-2 px-4 rounded-full">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x400/?cosmetics" alt="Cosmetics" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Complete Makeup Kit</h3>
+                        <p class="text-gray-600">$99.99</p>
+                        <button class="mt-2 bg-pink-600 hover:bg-pink-500 text-white py-2 px-4 rounded-full">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Shop by Category</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x400/?makeup" alt="Makeup" class="w-full h-40 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-semibold">Makeup</h3>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x400/?skincare" alt="Skincare" class="w-full h-40 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-semibold">Skincare</h3>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x400/?fragrance" alt="Fragrance" class="w-full h-40 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-semibold">Fragrance</h3>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x400/?nails" alt="Nails" class="w-full h-40 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-semibold">Nails</h3>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x400/?tools" alt="Tools" class="w-full h-40 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-semibold">Tools</h3>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x400/?cosmetics" alt="Cosmetics" class="w-full h-40 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-semibold">Cosmetics</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">What Our Customers Say</h2>
+            <div class="flex flex-col space-y-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-600 italic">"Nefetiti has transformed my beauty routine! The products are amazing and the results speak for themselves!"</p>
+                    <h4 class="font-semibold mt-4">- Jessica M.</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-600 italic">"I love the variety of products offered! Nefetiti has everything I need for my makeup collection."</p>
+                    <h4 class="font-semibold mt-4">- Amanda R.</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-600 italic">"Fast shipping and fantastic customer service. I highly recommend Nefetiti to all beauty lovers!"</p>
+                    <h4 class="font-semibold mt-4">- Sarah W.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Latest Beauty Tips & Trends</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x400/?beauty-tips" alt="Beauty Tips" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">5 Tips for Flawless Skin</h3>
+                        <p class="text-gray-600 mb-4">Learn how to achieve radiant and flawless skin with these essential tips.</p>
+                        <a href="#" class="text-pink-600 hover:underline">Read More</a>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x400/?makeup-looks" alt="Makeup Looks" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Trending Makeup Looks</h3>
+                        <p class="text-gray-600 mb-4">Discover the latest makeup trends that will elevate your beauty game.</p>
+                        <a href="#" class="text-pink-600 hover:underline">Read More</a>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x400/?skincare-routine" alt="Skincare Routine" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Your Perfect Skincare Routine</h3>
+                        <p class="text-gray-600 mb-4">Find out how to create the ideal skincare routine tailored to your skin type.</p>
+                        <a href="#" class="text-pink-600 hover:underline">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">About Nefetiti</h2>
+            <p class="text-lg text-gray-700 mb-4">At Nefetiti, we believe in empowering individuals to express their unique beauty. Founded by a passionate group of beauty enthusiasts, our mission is to provide high-quality beauty products that cater to diverse needs and preferences.</p>
+            <p class="text-lg text-gray-700 mb-4">We meticulously curate our product offerings, ensuring that each item meets our high standards for quality, safety, and effectiveness. Our commitment to sustainability drives us to source ingredients responsibly and package our products thoughtfully.</p>
+            <p class="text-lg text-gray-700 mb-4">Join us on this beauty journey and discover how our products can enhance your natural beauty and boost your confidence.</p>
+            <a href="#" class="bg-pink-600 hover:bg-pink-500 text-white font-semibold py-3 px-6 rounded-full">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-8 bg-gray-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">© 2024 Nefetiti. All Rights Reserved.</p>
+            <ul class="flex justify-center space-x-6">
+                <li><a href="#" class="hover:text-pink-400">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-pink-400">Terms of Service</a></li>
+                <li><a href="#" class="hover:text-pink-400">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
