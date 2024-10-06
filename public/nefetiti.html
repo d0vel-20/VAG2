@@ -6,26 +6,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nefetiti - Beauty & Cosmetics</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./index.css">
     <style>
         /* Custom styles for the hero section */
         .hero-bg {
-            background-image: url('https://source.unsplash.com/1600x900/?makeup,beauty');
+            background-image: url('https://res.cloudinary.com/da1sagzgc/image/upload/v1728222334/s01-update2_eupxbg.jpg');
             background-size: cover;
             background-position: center;
+            backdrop-filter: opacity(20px);
+        }
+        /* Hide the mobile menu by default */
+        .mobile-menu {
+            display: none;
         }
     </style>
 </head>
 
 <body class="bg-gray-50">
 
+
+      <!-- Navbar -->
+  <nav class="bg-white w-full z-[999] text-black shadow-md fixed top-0">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="text-2xl font-bold">
+        <!-- <a href="#" class="text-pink-600">Nefetiti</a> -->
+         <img class="w-10" src="https://res.cloudinary.com/da1sagzgc/image/upload/v1728216554/nefertiti_nfbppo.jpg" alt="">
+      </div>
+
+      <!-- Nav Links -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="#" class="hover:text-gray-400">Home</a>
+        <a href="#" class="hover:text-gray-400">Shop</a>
+        <a href="#" class="hover:text-gray-400">Nefertiti Music</a>
+        <a href="#" class="hover:text-gray-400">Nefertiti Video</a>
+        <a href="./blog.html" class="hover:text-gray-400">About</a>
+        <a href="#" class="hover:text-gray-400">Contact Us</a>
+      </div>
+
+      <!-- Sign-in and Cart Icon -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="#" class="text-2xl"><i class="fas fa-portrait text-purple-900"></i></a>
+        <a href="#" class="text-2xl"><i class="fas fa-shopping-cart text-purple-900"></i></a>
+
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="menu-btn text-2xl md:hidden">
+        <i class="fas fa-bars open-menu"></i>
+        <i class="fas fa-times close-menu"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="nav-links md:hidden z-10 bg-secondaryBlack text-white py-4 ">
+      <a href="#" class="block py-2 px-4 hover:bg-gray-700">Home</a>
+      <a href="#" class="block py-2 px-4 hover:bg-gray-700">Products</a>
+      <a href="#" class="block py-2 px-4 hover:bg-gray-700">About</a>
+      <a href="#" class="block py-2 px-4 hover:bg-gray-700">Blog</a>
+      <a href="#" class="block py-2 px-4 hover:bg-gray-700">Contatct Us</a>
+      <div class="border-t border-gray-700 mt-4 pt-4">
+        <a href="#" class="block py-2 px-4 hover:bg-gray-700">Sign In</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-700">My Account</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-700 text-2xl"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </div>
+      <!-- Search Bar (visible on all screens) -->
+  <div class="bg-textColor py-4 hidden">
+    <div class="container mx-auto px-4">
+      <div class="relative">
+        <input type="text" placeholder="Search products......" class="w-full px-4 py-2 bg-secondaryBlack rounded-md text-sm text-white focus:outline-none">
+        <i class="fas fa-search absolute right-4 top-3 text-textColor"></i>
+      </div>
+    </div>
+  </div>
+  </nav>
+
     <!-- Hero Section -->
-    <header class="hero-bg h-screen flex items-center justify-center text-center text-white">
-        <div class="bg-black bg-opacity-50 p-8 rounded-lg">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to Nefetiti</h1>
-            <p class="text-lg md:text-2xl mb-6">Discover the beauty within you with our exquisite range of cosmetics.</p>
-            <a href="#products" class="bg-pink-600 hover:bg-pink-500 text-white font-semibold py-3 px-6 rounded-full">Shop Now</a>
+    <section class="hero-bg h-screen flex items-center justify-center text-center text-white">
+        <div class="bg-black bg-opacity-80 p-8 rounded-lg">
+
+            <h1 class="text-2xl md:text-4xl font-bold mb-4">Welcome to Nefertiti- Querencia</h1>
+            <p class="text-2xl">A Subsidiary of Vision Africa Group</p>
+            <p class="text-1xl md:text-[12px] mb-6 text-center text">At Nefertiti Querencia, we are more than just a distributor of beauty products we are curators of African elegance and style. <br> As a proud subsidiary of Vision Africa Group, we offer a range of premium beauty and fashion items, from cosmetics to human hair and traditional African apparel. <br> By keeping close ties with Africa’s top fashion designers, we ensure that every piece we provide reflects the vibrant, evolving world of African fashion. <br> Whether you’re attending a special event or celebrating a personal milestone, our goal is to make your moments unforgettable.
+            </p>
+            <a href="#products" class="bg-purple-900 hover:bg-pink-500 text-white font-semibold py-3 px-6 rounded-full">Shop Now</a>
         </div>
-    </header>
+        
+    </section>
+
+<!-- What We Offer Section -->
+<section class="py-16 bg-white" id="offers">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-8">What We Offer</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="relative p-6 rounded-lg overflow-hidden group">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://res.cloudinary.com/da1sagzgc/image/upload/v1728220549/240610-beauty-awards-2024-skincare-winners-vl-main-b0c976_bvku5g.webp');"></div>
+                <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Dark Overlay -->
+                <div class="relative z-10 p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-white">Cosmetics & Skincare</h3>
+                    <p class="text-gray-300">Premium products to enhance your natural beauty.</p>
+                </div>
+            </div>
+            <div class="relative p-6 rounded-lg overflow-hidden group">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://res.cloudinary.com/da1sagzgc/image/upload/v1728220681/s-l1200_siisls.jpg');"></div>
+                <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Dark Overlay -->
+                <div class="relative z-10 p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-white">Human Hair & Extensions</h3>
+                    <p class="text-gray-300">High-quality options for all hair types, sourced from leading global manufacturers.</p>
+                </div>
+            </div>
+            <div class="relative p-6 rounded-lg overflow-hidden group">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://res.cloudinary.com/da1sagzgc/image/upload/v1728220794/360_F_149594236_OnTSffIxq6J0EbBRSlSRG34wBV8qtIW8_ciwwbn.jpg');"></div>
+                <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Dark Overlay -->
+                <div class="relative z-10 p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-white">African Traditional Apparel</h3>
+                    <p class="text-gray-300">Fashion that connects you to your roots, designed by Africa’s most talented designers.</p>
+                </div>
+            </div>
+            <div class="relative p-6 rounded-lg overflow-hidden group">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://res.cloudinary.com/da1sagzgc/image/upload/v1728220917/set-professional-cosmetics-makeup-tools-accessories-women-s-beauty_118086-4757_ftdveq.avif');"></div>
+                <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Dark Overlay -->
+                <div class="relative z-10 p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-white">Accessories & Beauty Tools</h3>
+                    <p class="text-gray-300">Everything you need to complete your look, at a price that’s just right.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Featured Products Section -->
     <section id="products" class="py-16">
@@ -33,171 +144,84 @@
             <h2 class="text-3xl font-bold text-center mb-8">Featured Products</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://source.unsplash.com/400x400/?lipstick" alt="Lipstick" class="w-full h-48 object-cover">
+                    <img src="https://res.cloudinary.com/da1sagzgc/image/upload/v1728222477/designer-s-choice-front-view-luxury-lipstick-with-rose-petals-ai-generated_690082-885_jsfhcv.avif" alt="Lipstick" class="w-full h-48 object-cover">
                     <div class="p-4">
                         <h3 class="text-lg font-semibold">Luxury Lipstick</h3>
                         <p class="text-gray-600">$29.99</p>
-                        <button class="mt-2 bg-pink-600 hover:bg-pink-500 text-white py-2 px-4 rounded-full">Add to Cart</button>
+                        <button class="mt-2 bg-purple-900 hover:bg-pink-500 text-white py-2 px-4 rounded-full">Add to Cart</button>
                     </div>
                 </div>
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://source.unsplash.com/400x400/?foundation" alt="Foundation" class="w-full h-48 object-cover">
+                    <img src="https://res.cloudinary.com/da1sagzgc/image/upload/v1728222477/designer-s-choice-front-view-luxury-lipstick-with-rose-petals-ai-generated_690082-885_jsfhcv.avif" alt="Lipstick" class="w-full h-48 object-cover">
                     <div class="p-4">
-                        <h3 class="text-lg font-semibold">Silk Foundation</h3>
-                        <p class="text-gray-600">$39.99</p>
-                        <button class="mt-2 bg-pink-600 hover:bg-pink-500 text-white py-2 px-4 rounded-full">Add to Cart</button>
+                        <h3 class="text-lg font-semibold">Luxury Lipstick</h3>
+                        <p class="text-gray-600">$29.99</p>
+                        <button class="mt-2 bg-purple-900 hover:bg-pink-500 text-white py-2 px-4 rounded-full">Add to Cart</button>
                     </div>
                 </div>
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://source.unsplash.com/400x400/?skincare" alt="Skincare" class="w-full h-48 object-cover">
+                    <img src="https://res.cloudinary.com/da1sagzgc/image/upload/v1728222477/designer-s-choice-front-view-luxury-lipstick-with-rose-petals-ai-generated_690082-885_jsfhcv.avif" alt="Lipstick" class="w-full h-48 object-cover">
                     <div class="p-4">
-                        <h3 class="text-lg font-semibold">Hydrating Serum</h3>
-                        <p class="text-gray-600">$49.99</p>
-                        <button class="mt-2 bg-pink-600 hover:bg-pink-500 text-white py-2 px-4 rounded-full">Add to Cart</button>
+                        <h3 class="text-lg font-semibold">Luxury Lipstick</h3>
+                        <p class="text-gray-600">$29.99</p>
+                        <button class="mt-2 bg-purple-900 hover:bg-pink-500 text-white py-2 px-4 rounded-full">Add to Cart</button>
                     </div>
                 </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://source.unsplash.com/400x400/?nails" alt="Nail Polish" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-semibold">Chic Nail Polish</h3>
-                        <p class="text-gray-600">$19.99</p>
-                        <button class="mt-2 bg-pink-600 hover:bg-pink-500 text-white py-2 px-4 rounded-full">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://source.unsplash.com/400x400/?perfume" alt="Perfume" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-semibold">Elegant Perfume</h3>
-                        <p class="text-gray-600">$59.99</p>
-                        <button class="mt-2 bg-pink-600 hover:bg-pink-500 text-white py-2 px-4 rounded-full">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://source.unsplash.com/400x400/?cosmetics" alt="Cosmetics" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-semibold">Complete Makeup Kit</h3>
-                        <p class="text-gray-600">$99.99</p>
-                        <button class="mt-2 bg-pink-600 hover:bg-pink-500 text-white py-2 px-4 rounded-full">Add to Cart</button>
-                    </div>
-                </div>
+                <!-- Additional product cards similar to the above -->
             </div>
         </div>
     </section>
 
-    <!-- Product Categories Section -->
-    <section class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Shop by Category</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://source.unsplash.com/400x400/?makeup" alt="Makeup" class="w-full h-40 object-cover">
-                    <div class="p-4 text-center">
-                        <h3 class="text-lg font-semibold">Makeup</h3>
-                    </div>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://source.unsplash.com/400x400/?skincare" alt="Skincare" class="w-full h-40 object-cover">
-                    <div class="p-4 text-center">
-                        <h3 class="text-lg font-semibold">Skincare</h3>
-                    </div>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://source.unsplash.com/400x400/?fragrance" alt="Fragrance" class="w-full h-40 object-cover">
-                    <div class="p-4 text-center">
-                        <h3 class="text-lg font-semibold">Fragrance</h3>
-                    </div>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://source.unsplash.com/400x400/?nails" alt="Nails" class="w-full h-40 object-cover">
-                    <div class="p-4 text-center">
-                        <h3 class="text-lg font-semibold">Nails</h3>
-                    </div>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://source.unsplash.com/400x400/?tools" alt="Tools" class="w-full h-40 object-cover">
-                    <div class="p-4 text-center">
-                        <h3 class="text-lg font-semibold">Tools</h3>
-                    </div>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://source.unsplash.com/400x400/?cosmetics" alt="Cosmetics" class="w-full h-40 object-cover">
-                    <div class="p-4 text-center">
-                        <h3 class="text-lg font-semibold">Cosmetics</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Testimonials Section -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">What Our Customers Say</h2>
-            <div class="flex flex-col space-y-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <p class="text-gray-600 italic">"Nefetiti has transformed my beauty routine! The products are amazing and the results speak for themselves!"</p>
-                    <h4 class="font-semibold mt-4">- Jessica M.</h4>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <p class="text-gray-600 italic">"I love the variety of products offered! Nefetiti has everything I need for my makeup collection."</p>
-                    <h4 class="font-semibold mt-4">- Amanda R.</h4>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <p class="text-gray-600 italic">"Fast shipping and fantastic customer service. I highly recommend Nefetiti to all beauty lovers!"</p>
-                    <h4 class="font-semibold mt-4">- Sarah W.</h4>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Blog Section -->
-    <section class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Latest Beauty Tips & Trends</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://source.unsplash.com/400x400/?beauty-tips" alt="Beauty Tips" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-semibold">5 Tips for Flawless Skin</h3>
-                        <p class="text-gray-600 mb-4">Learn how to achieve radiant and flawless skin with these essential tips.</p>
-                        <a href="#" class="text-pink-600 hover:underline">Read More</a>
-                    </div>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://source.unsplash.com/400x400/?makeup-looks" alt="Makeup Looks" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-semibold">Trending Makeup Looks</h3>
-                        <p class="text-gray-600 mb-4">Discover the latest makeup trends that will elevate your beauty game.</p>
-                        <a href="#" class="text-pink-600 hover:underline">Read More</a>
-                    </div>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://source.unsplash.com/400x400/?skincare-routine" alt="Skincare Routine" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-semibold">Your Perfect Skincare Routine</h3>
-                        <p class="text-gray-600 mb-4">Find out how to create the ideal skincare routine tailored to your skin type.</p>
-                        <a href="#" class="text-pink-600 hover:underline">Read More</a>
-                    </div>
-                </div>
+<!-- Nefertiti Muzic Section -->
+<section class="py-16 bg-gray-100" id="music">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-8">Nefertiti Muzic: Celebrating Talent & Culture</h2>
+        <p class="text-gray-600 text-lg mb-6">Expanding beyond beauty, Nefertiti Querencia has recently launched Nefertiti Muzic, a record label dedicated to discovering and nurturing musical talent across Africa and beyond.</p>
+        <p class="text-gray-600 text-lg mb-8">Join us in celebrating music and culture that uplifts communities and inspires creativity.</p>
+        
+        <div class="flex justify-center mb-8">
+            <img src="https://via.placeholder.com/600x400.png?text=Music+Album+Cover" alt="Music Album Cover" class="rounded-lg shadow-lg w-full md:w-2/3 lg:w-1/2">
+        </div>
+
+        <h3 class="text-2xl font-semibold mb-4">Discover Our Latest Hits</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://via.placeholder.com/150.png?text=Track+1" alt="Track 1" class="rounded-lg mb-4 w-full">
+                <h4 class="font-bold text-lg">Track Title 1</h4>
+                <p class="text-gray-600">Artist Name 1</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://via.placeholder.com/150.png?text=Track+2" alt="Track 2" class="rounded-lg mb-4 w-full">
+                <h4 class="font-bold text-lg">Track Title 2</h4>
+                <p class="text-gray-600">Artist Name 2</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://via.placeholder.com/150.png?text=Track+3" alt="Track 3" class="rounded-lg mb-4 w-full">
+                <h4 class="font-bold text-lg">Track Title 3</h4>
+                <p class="text-gray-600">Artist Name 3</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
 
     <!-- About Us Section -->
-    <section class="py-16">
+    <section id="about" class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-8">About Nefetiti</h2>
             <p class="text-lg text-gray-700 mb-4">At Nefetiti, we believe in empowering individuals to express their unique beauty. Founded by a passionate group of beauty enthusiasts, our mission is to provide high-quality beauty products that cater to diverse needs and preferences.</p>
             <p class="text-lg text-gray-700 mb-4">We meticulously curate our product offerings, ensuring that each item meets our high standards for quality, safety, and effectiveness. Our commitment to sustainability drives us to source ingredients responsibly and package our products thoughtfully.</p>
-            <p class="text-lg text-gray-700 mb-4">Join us on this beauty journey and discover how our products can enhance your natural beauty and boost your confidence.</p>
             <a href="#" class="bg-pink-600 hover:bg-pink-500 text-white font-semibold py-3 px-6 rounded-full">Learn More</a>
         </div>
     </section>
 
     <!-- Footer Section -->
-    <footer class="py-8 bg-gray-900 text-white">
+    <footer id="contact" class="py-8 bg-gray-900 text-white">
         <div class="container mx-auto px-4 text-center">
-            <p class="mb-4">© 2024 Nefetiti. All Rights Reserved.</p>
+            <p class="mb-4">© 2024 Nefetiti Querencia. All Rights Reserved.</p>
             <ul class="flex justify-center space-x-6">
                 <li><a href="#" class="hover:text-pink-400">Privacy Policy</a></li>
                 <li><a href="#" class="hover:text-pink-400">Terms of Service</a></li>
@@ -206,7 +230,19 @@
         </div>
     </footer>
 
+    <script>
+                // Mobile menu toggle
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menuBtn.classList.toggle('open');
+    });
+    </script>
 </body>
 
 </html>
+
+
 

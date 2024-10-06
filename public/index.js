@@ -1,25 +1,5 @@
 
-const flashSaleEndTime = new Date("2024-10-05T00:00:00").getTime();
 
-// Countdown Timer
-function updateCountdown() {
-  const now = new Date().getTime();
-  const distance = flashSaleEndTime - now;
-
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-  if (distance < 0) {
-    clearInterval(countdownInterval);
-    document.getElementById("countdown").innerHTML = "Flash Sale Ended";
-  }
-}
-
-const countdownInterval = setInterval(updateCountdown, 1000);
 
 
 
@@ -135,49 +115,7 @@ const countdownInterval = setInterval(updateCountdown, 1000);
   // ==--------------------------------=-===============CAROUSEL FUNCTION
 
 
-  const container = document.getElementById('flashSaleContainer');
-  const prevButton = document.getElementById('prev');
-  const nextButton = document.getElementById('next');
 
-  let scrollAmount = 0;
-
-  // Function to get the number of visible cards based on the screen size
-  const getVisibleCards = () => {
-    const screenWidth = window.innerWidth;
-    if (screenWidth <= 480) {
-      return 1; // 1 card on extra small screens
-    } else if (screenWidth <= 640) {
-      return 2; // 2 cards on very small screens
-    } else if (screenWidth <= 768) {
-      return 3; // 3 cards on small screens
-    } else if (screenWidth <= 1024) {
-      return 4; // 4 cards on medium screens
-    } else {
-      return 5; // 5 cards on large screens
-    }
-  };
-
-  // Adjust the visible number of cards on load and resize
-  let visibleCards = getVisibleCards();
-  let cardWidth = container.children[0].offsetWidth + 24; // Width of a card plus gap (24px)
-
-  window.addEventListener('resize', () => {
-    visibleCards = getVisibleCards();
-    cardWidth = container.children[0].offsetWidth + 24;
-  });
-
-  // Function to scroll left
-  prevButton.addEventListener('click', () => {
-    scrollAmount = Math.max(scrollAmount - cardWidth * visibleCards, 0);
-    container.style.transform = `translateX(-${scrollAmount}px)`;
-  });
-
-  // Function to scroll right
-  nextButton.addEventListener('click', () => {
-    const maxScroll = cardWidth * (container.children.length - visibleCards);
-    scrollAmount = Math.min(scrollAmount + cardWidth * visibleCards, maxScroll);
-    container.style.transform = `translateX(-${scrollAmount}px)`;
-  });
 
 
 
