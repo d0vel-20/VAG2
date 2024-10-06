@@ -747,6 +747,10 @@ video {
   margin-right: 0.25rem;
 }
 
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
 .line-clamp-6 {
   overflow: hidden;
   display: -webkit-box;
@@ -899,6 +903,10 @@ video {
 
 .max-w-screen-xl {
   max-width: 1280px;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
 }
 
 .transform {
@@ -1442,6 +1450,10 @@ video {
 
 .opacity-50 {
   opacity: 0.5;
+}
+
+.opacity-60 {
+  opacity: 0.6;
 }
 
 .shadow {
