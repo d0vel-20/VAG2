@@ -41,8 +41,8 @@
         <a href="#" class="hover:text-gray-400">Home</a>
         <a href="#" class="hover:text-gray-400">Shop</a>
         <a href="#" class="hover:text-gray-400">Nefertiti Music</a>
-        <a href="#" class="hover:text-gray-400">Nefertiti Video</a>
-        <a href="./blog.html" class="hover:text-gray-400">About</a>
+        <a href="./nefertitiVideo.html" class="hover:text-gray-400">Nefertiti Video</a>
+        <a href="#" class="hover:text-gray-400">About</a>
         <a href="#" class="hover:text-gray-400">Contact Us</a>
       </div>
 
@@ -122,7 +122,7 @@
                 <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://res.cloudinary.com/da1sagzgc/image/upload/v1728220794/360_F_149594236_OnTSffIxq6J0EbBRSlSRG34wBV8qtIW8_ciwwbn.jpg');"></div>
                 <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Dark Overlay -->
                 <div class="relative z-10 p-6">
-                    <h3 class="text-xl font-semibold mb-4 text-white">African Traditional Apparel</h3>
+                    <h3 class="text-xl font-semibold mb-4 text-white">African Women's Apparel</h3>
                     <p class="text-gray-300">Fashion that connects you to your roots, designed by Africa’s most talented designers.</p>
                 </div>
             </div>
@@ -176,35 +176,53 @@
 
 <!-- Nefertiti Muzic Section -->
 <section class="py-16 bg-gray-100" id="music">
-    <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl font-bold mb-8">Nefertiti Muzic: Celebrating Talent & Culture</h2>
+    <div class="container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center">
+      
+      <!-- Left Side: Description and Button -->
+      <div class="lg:w-1/2 text-center lg:text-left lg:pr-12">
+        <h2 class="text-3xl font-bold mb-4 text-gray-900">Nefertiti Muzic: Celebrating Talent & Culture</h2>
         <p class="text-gray-600 text-lg mb-6">Expanding beyond beauty, Nefertiti Querencia has recently launched Nefertiti Muzic, a record label dedicated to discovering and nurturing musical talent across Africa and beyond.</p>
         <p class="text-gray-600 text-lg mb-8">Join us in celebrating music and culture that uplifts communities and inspires creativity.</p>
-        
-        <div class="flex justify-center mb-8">
-            <img src="https://via.placeholder.com/600x400.png?text=Music+Album+Cover" alt="Music Album Cover" class="rounded-lg shadow-lg w-full md:w-2/3 lg:w-1/2">
-        </div>
-
-        <h3 class="text-2xl font-semibold mb-4">Discover Our Latest Hits</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-                <img src="https://via.placeholder.com/150.png?text=Track+1" alt="Track 1" class="rounded-lg mb-4 w-full">
-                <h4 class="font-bold text-lg">Track Title 1</h4>
-                <p class="text-gray-600">Artist Name 1</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-                <img src="https://via.placeholder.com/150.png?text=Track+2" alt="Track 2" class="rounded-lg mb-4 w-full">
-                <h4 class="font-bold text-lg">Track Title 2</h4>
-                <p class="text-gray-600">Artist Name 2</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-                <img src="https://via.placeholder.com/150.png?text=Track+3" alt="Track 3" class="rounded-lg mb-4 w-full">
-                <h4 class="font-bold text-lg">Track Title 3</h4>
-                <p class="text-gray-600">Artist Name 3</p>
-            </div>
-        </div>
+  
+        <!-- Discover Button -->
+        <a href="/music-page" class="inline-block bg-purple-900 text-white font-semibold text-lg px-8 py-3 rounded-lg shadow-lg hover:bg-purple-700 transition duration-300">
+          Discover Our Latest Hits
+        </a>
+      </div>
+  
+      <!-- Right Side: Image -->
+      <div class="lg:w-1/2 mt-8 lg:mt-0">
+        <img src="https://res.cloudinary.com/da1sagzgc/image/upload/v1728223385/volumetric-musical-background-with-treble-clef-notes-generative-ai_169016-29576_xlwyys.avif" alt="Music Album Cover" class="rounded-lg shadow-lg w-full">
+      </div>
+      
     </div>
-</section>
+  </section>
+  
+
+<!-- Nefertiti Video Section -->
+<section class="py-16 bg-white" id="video">
+    <div class="container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center">
+      
+      <!-- Left Side: Image -->
+      <div class="lg:w-1/2 mb-8 lg:mb-0">
+        <img src="https://res.cloudinary.com/da1sagzgc/image/upload/v1728223250/adanta-at-skegness_zbnan5.jpg" alt="Nefertiti Video Thumbnail" class="rounded-xl shadow-lg w-full">
+      </div>
+      
+      <!-- Right Side: Description and Button -->
+      <div class="lg:w-1/2 text-center lg:text-left lg:pl-12">
+        <h2 class="text-3xl font-bold mb-4 text-gray-900">Nefertiti Videos: Experience Culture & Visuals</h2>
+        <p class="text-gray-600 text-lg mb-6">Nefertiti Querencia extends its cultural roots into the world of videography. Through our platform, we showcase videos that highlight Africa’s vibrant culture, art, and talent.</p>
+        <p class="text-gray-600 text-lg mb-8">From documentaries to music videos, immerse yourself in powerful storytelling that connects communities across the continent.</p>
+  
+        <!-- Discover Button -->
+        <a href="./nefertitiVideo.html" class="inline-block bg-purple-900 text-white font-semibold text-lg px-8 py-3 rounded-lg shadow-lg hover:bg-green-500 transition duration-300">
+          Discover Our Videos
+        </a>
+      </div>
+      
+    </div>
+  </section>
+  
 
 
 
