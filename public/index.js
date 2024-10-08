@@ -7,29 +7,19 @@
     // FAQ Data
     const faqs = [
         {
-          question: "What is the return policy?",
+          question: "What is Vision Africa Group?",
           answer:
-            "You can return any product within 30 days of receiving it. The product must be in its original packaging, unused, and in the same condition as when you received it. Please contact our support team for further instructions.",
+            "At Vision Africa, we specialize in connecting foreign manufacturers with local African retailers, partners, and distributors of cutting-edge electronics. Our mission is to empower local businesses by providing access to a diverse range of high-quality products that enhance everyday life and drive economic growth.",
         },
         {
-          question: "How long does shipping take?",
+          question: "Does VA sell products",
           answer:
-            "Shipping typically takes 3-7 business days for domestic orders. International orders may take longer depending on the destination. Once your order is shipped, we will send you a tracking number for your reference.",
+            "VA does not sell products directly. Instead, we provide an exclusive platform where you showcase your products to distributors and retail buyers and initiate conversations directly.",
         },
         {
-          question: "Do you offer international shipping?",
+          question: "Discount on Advertising?",
           answer:
-            "Yes, we offer international shipping to select countries. Shipping costs and delivery times may vary based on your location. Please check the shipping details at checkout for more information.",
-        },
-        {
-          question: "How do I track my order?",
-          answer:
-            "Once your order is shipped, you will receive an email with the tracking number and a link to track your shipment. You can also track your order directly from your account dashboard on our website.",
-        },
-        {
-          question: "Can I cancel or change my order?",
-          answer:
-            "Yes, you can cancel or modify your order within 24 hours of placing it. After this period, the order may already be processed and shipped. Contact our customer support team for assistance with cancellations or changes.",
+            "VA offers a cost-effective solution for connecting with quality distributors. Unlike trade shows or agencies that are time-consuming and expensive, VA connects you with vetted distributors at a fraction of the cost.",
         },
       ];
   
