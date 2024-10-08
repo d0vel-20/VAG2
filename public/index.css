@@ -41,6 +41,9 @@
   .hero{
     background-image: url("https://res.cloudinary.com/da1sagzgc/image/upload/v1728224162/dua_furtherafrica_dinholima008-e1609815595952_yt8gs4.jpg");
   }
+  .herol{
+    background-image: url('https://res.cloudinary.com/da1sagzgc/image/upload/v1728223250/adanta-at-skegness_zbnan5.jpg');
+  }
 
 
   @keyframes slide {
