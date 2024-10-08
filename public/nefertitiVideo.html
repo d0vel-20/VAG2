@@ -11,62 +11,63 @@
 </head>
 <body>
 
-          <!-- Navbar -->
-  <nav class="bg-white w-full z-[999] text-black shadow-md fixed top-0">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <!-- Logo -->
-      <div class="text-2xl font-bold">
-        <!-- <a href="#" class="text-pink-600">Nefetiti</a> -->
-         <img class="w-10" src="https://res.cloudinary.com/da1sagzgc/image/upload/v1728216554/nefertiti_nfbppo.jpg" alt="">
-      </div>
 
-      <!-- Nav Links -->
-      <div class="hidden md:flex items-center space-x-6">
-        <a href="#" class="hover:text-gray-400">Home</a>
-        <a href="#" class="hover:text-gray-400">Shop</a>
-        <a href="#" class="hover:text-gray-400">Nefertiti Music</a>
-        <a href="./nefertitiVideo.html" class="hover:text-gray-400">Nefertiti Video</a>
-        <a href="#" class="hover:text-gray-400">About</a>
-        <a href="#" class="hover:text-gray-400">Contact Us</a>
+      <!-- Navbar -->
+      <nav class="bg-white w-full z-[999] text-black shadow-md fixed top-0">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+          <!-- Logo -->
+          <div class="text-2xl font-bold">
+            <!-- <a href="#" class="text-pink-600">Nefetiti</a> -->
+             <img class="w-10" src="https://res.cloudinary.com/da1sagzgc/image/upload/v1728216554/nefertiti_nfbppo.jpg" alt="">
+          </div>
+    
+          <!-- Nav Links -->
+          <div class="hidden md:flex items-center space-x-6">
+            <a href="#" class="hover:text-gray-400">Home</a>
+            <a href="#" class="hover:text-gray-400">Shop</a>
+            <a href="#" class="hover:text-gray-400">Nefertiti Music</a>
+            <a href="./nefertitiVideo.html" class="hover:text-gray-400">Nefertiti Video</a>
+            <a href="#" class="hover:text-gray-400">About</a>
+            <a href="#" class="hover:text-gray-400">Contact Us</a>
+          </div>
+    
+          <!-- Sign-in and Cart Icon -->
+          <div class="hidden md:flex items-center space-x-6">
+            <a href="#" class="text-2xl"><i class="fas fa-portrait text-purple-900"></i></a>
+            <a href="#" class="text-2xl"><i class="fas fa-shopping-cart text-purple-900"></i></a>
+    
+          </div>
+    
+          <!-- Mobile Menu Button -->
+          <button class="menu-btn text-2xl md:hidden">
+            <i class="fas fa-bars open-menu"></i>
+            <i class="fas fa-times close-menu"></i>
+          </button>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div class="nav-links md:hidden z-10 bg-dividerColor text-black py-4 ">
+          <a href="#" class="block py-2 px-4 hover:bg-gray-700">Home</a>
+          <a href="#" class="block py-2 px-4 hover:bg-gray-700">Shop</a>
+          <a href="./nefertitiVideo.html" class="block py-2 px-4 hover:bg-gray-700">Nefertiti Video</a>
+          <a href="#" class="block py-2 px-4 hover:bg-gray-700">Nefertiti Music</a>
+          <a href="#" class="block py-2 px-4 hover:bg-gray-700">About</a>
+          <a href="#" class="block py-2 px-4 hover:bg-gray-700">Contact Us</a>
+          <div class="border-t border-gray-700 mt-4 pt-4">
+            <a href="#" class="text-2xl"><i class="fas fa-portrait text-purple-900"></i></a>
+            <a href="#" class="text-2xl"><i class="fas fa-shopping-cart text-purple-900"></i></a>
+          </div>
+        </div>
+          <!-- Search Bar (visible on all screens) -->
+      <div class="bg-textColor py-4 hidden">
+        <div class="container mx-auto px-4">
+          <div class="relative">
+            <input type="text" placeholder="Search products......" class="w-full px-4 py-2 bg-secondaryBlack rounded-md text-sm text-white focus:outline-none">
+            <i class="fas fa-search absolute right-4 top-3 text-textColor"></i>
+          </div>
+        </div>
       </div>
-
-      <!-- Sign-in and Cart Icon -->
-      <div class="hidden md:flex items-center space-x-6">
-        <a href="#" class="text-2xl"><i class="fas fa-portrait text-purple-900"></i></a>
-        <a href="#" class="text-2xl"><i class="fas fa-shopping-cart text-purple-900"></i></a>
-
-      </div>
-
-      <!-- Mobile Menu Button -->
-      <button class="menu-btn text-2xl md:hidden">
-        <i class="fas fa-bars open-menu"></i>
-        <i class="fas fa-times close-menu"></i>
-      </button>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div class="nav-links md:hidden z-10 bg-secondaryBlack text-white py-4 ">
-      <a href="#" class="block py-2 px-4 hover:bg-gray-700">Home</a>
-      <a href="#" class="block py-2 px-4 hover:bg-gray-700">Products</a>
-      <a href="#" class="block py-2 px-4 hover:bg-gray-700">About</a>
-      <a href="#" class="block py-2 px-4 hover:bg-gray-700">Blog</a>
-      <a href="#" class="block py-2 px-4 hover:bg-gray-700">Contatct Us</a>
-      <div class="border-t border-gray-700 mt-4 pt-4">
-        <a href="#" class="block py-2 px-4 hover:bg-gray-700">Sign In</a>
-        <a href="#" class="block py-2 px-4 hover:bg-gray-700">My Account</a>
-        <a href="#" class="block py-2 px-4 hover:bg-gray-700 text-2xl"><i class="fas fa-shopping-cart"></i></a>
-      </div>
-    </div>
-      <!-- Search Bar (visible on all screens) -->
-  <div class="bg-textColor py-4 hidden">
-    <div class="container mx-auto px-4">
-      <div class="relative">
-        <input type="text" placeholder="Search products......" class="w-full px-4 py-2 bg-secondaryBlack rounded-md text-sm text-white focus:outline-none">
-        <i class="fas fa-search absolute right-4 top-3 text-textColor"></i>
-      </div>
-    </div>
-  </div>
-  </nav>
+      </nav>
 
     <!-- Nefertiti Video Page -->
 <section class="py-16 mt-[120px]" id="video-page">
