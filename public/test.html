@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Hero Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Background gradient with lighting effect */
+        .bg-gradient-lighting {
+            background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)),
+                        linear-gradient(135deg, #2c003e, #3d006b, #3e0087);
+        }
+
+        /* Hexagon scale overlay */
+        .hexagon-overlay {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05), transparent 20%),
+                              linear-gradient(transparent 75%, rgba(255, 255, 255, 0.02));
+            background-size: 60px 60px;
+            background-position: center;
+        }
+
+        /* Extra custom glow effect for text */
+        .glow-text {
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6),
+                         0px 0px 20px rgba(255, 255, 255, 0.8),
+                         0px 0px 30px rgba(255, 0, 255, 0.7),
+                         0px 0px 40px rgba(200, 0, 200, 1);
+        }
+    </style>
+</head>
+<body class="bg-gray-900">
+    <!-- Hero Section -->
+    <section class="h-screen flex items-center justify-center bg-gradient-lighting hexagon-overlay relative">
+        <div class="absolute inset-0 opacity-50"></div>
+
+        <div class="container mx-auto px-6 lg:px-12 text-center lg:text-left">
+            <!-- Hero Content -->
+            <div class="max-w-2xl mx-auto lg:mx-0">
+                <h1 class="text-5xl lg:text-7xl font-extrabold text-white glow-text leading-tight mb-4">
+                    Unleash Your Vision
+                </h1>
+                <p class="mt-4 text-lg lg:text-xl text-gray-300 max-w-lg">
+                    A perfect balance between creativity and technology. Crafting experiences that leave an everlasting impact.
+                </p>
+                <div class="mt-8">
+                    <a href="#" class="px-8 py-4 bg-purple-600 hover:bg-purple-800 text-white text-lg font-semibold rounded-full shadow-lg transition-all">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

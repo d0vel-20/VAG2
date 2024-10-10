@@ -3,13 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VAG2 </title>
+  <title>VAG2-Home </title>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="stylesheet" href="./output.css">
   <link rel="stylesheet" href="./index.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <style>
+/* Custom styles for gradient background with light gold effect */
+.bg-gradient-light {
+    background: radial-gradient(circle at center, rgba(255, 223, 186, 0.2), rgba(184, 134, 11, 0.8)),
+                linear-gradient(135deg, #FFD700, #B8860B);
+}
+  </style>
 
 </head>
 
@@ -76,28 +85,38 @@
       <div class="swiper-wrapper">
 
 
-        <section class="swiper-slide relative w-full  bg-cover bg-center px-2 hero ">
-          <div class="absolute inset-0 bg-black opacity-70"></div>
-          <div class="relative flex flex-col items-center justify-center h-full text-center text-white">
-            <h1 class="text-4xl md:text-6xl font-bold leading-tight">
-              Welcome to Vision Africa Group
-            </h1>
-            <p class="mt-4 text-[px] md:text-md max-w-2xl">
-            Your trusted name in impprtation and distribution of high-quality electronics and electrical products in Nigeria since 2008. <br /> At vision Africa group we pride ourselves of being leading suppliers of the latest innovation of electronics and electrical appliances
-      
-            </p>
-            
-            <div class="mt-6 flex items-center justify-center gap-5">
-              <a
-                href="./nefetiti.html"
-                class="px-6 py-1 bg-accentGold text-lg font-semibold rounded-lg hover:bg-accentGold transition-colors"
-              >
-                Nefertiti
-            </a>
-            </div>
-      
+        <section class="swiper-slide relative w-full h-fit flex items-center hero">
+          <div class="absolute inset-0 bg-black/90"></div>
+
+          <div class="container  relative mx-auto px-4 h-fit  mt-12 sm:px-6 lg:px-12 flex flex-col lg:flex-row justify-between items-center">
+              
+              <!-- Left Part (Text) -->
+              <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
+                  <h1 class="text-3xl sm:text-4xl lg:text-6xl font-extrabold max-md:pt-[10vh] text-white leading-tight">
+                      Welcome to Vision Africa Group
+                  </h1>
+                  <p class="mt-4 text-base sm:text-lg lg:text-xl text-gray-300">
+                      ...your trusted name in distribution of latest models of high quality electronics and electrical equipment
+                  </p>
+              </div>
+              
+              <!-- Right Part (Image Grid) -->
+              <div class="lg:w-1/2 grid grid-cols-2 gap-4">
+                  <!-- Top Two Images -->
+                  <div class="col-span-1">
+                      <img src="https://res.cloudinary.com/da1sagzgc/image/upload/v1727475747/solar_ztnuwv.png" alt="Placeholder Image 1" class="w-full h-auto rounded-lg shadow-lg">
+                  </div>
+                  <div class="col-span-1">
+                      <img src="https://res.cloudinary.com/da1sagzgc/image/upload/v1727474789/surve_gseicj.jpg" alt="Placeholder Image 2" class="w-full h-auto rounded-lg shadow-lg">
+                  </div>
+                  <!-- Larger Bottom Image -->
+                  <div class="col-span-2">
+                      <img src="https://res.cloudinary.com/da1sagzgc/image/upload/v1727470224/hero_etugac.jpg" alt="Placeholder Image 3" class="w-full h-auto rounded-lg shadow-lg">
+                  </div>
+              </div>
           </div>
-        </section>
+      </section>
+      
         <section class="swiper-slide relative w-full  bg-cover bg-center px-2 herol ">
           <div class="absolute inset-0 bg-black opacity-70"></div>
           <div class="relative flex flex-col items-center justify-center h-full text-center text-white">
@@ -114,7 +133,7 @@
                 href="./nefetiti.html"
                 class="px-6 py-1 bg-accentGold text-lg font-semibold rounded-lg hover:bg-accentGold transition-colors"
               >
-                Nefertiti
+                Explore
             </a>
             </div>
       
@@ -130,7 +149,7 @@
 
 
     <!-- Vision Africa Group Section -->
-    <section id="vision-africa" class="py-20 flex flex-col items-center justify-center text-white">
+    <section id="vision-africa relative" class="py-20 flex flex-col items-center justify-center text-white">
       <div class="container mx-auto px-6 text-center">
           <h2 class="text-5xl font-bold mb-8 fade-up text-black">Discover Nefertiti</h2>
           <h2 class="text-3xl font-bold mb-8 fade-up text-black">A subsidiary of Vision Africa Group</h2>
@@ -391,7 +410,7 @@
 
 
       <!-- Latest Blogs-------------------------------------------------------------------------- -->
-      <section class="py-12 px-6 md:px-12 bg-accentGold">
+      <section class="py-12 px-6 md:px-12 bg-neutral-300">
         <div class="max-w-7xl mx-auto">
           <h2 class="text-4xl font-bold mb-8 text-center text-secondaryBlack">Latest Blogs</h2>
           <div id="blog-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
